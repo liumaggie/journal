@@ -4,6 +4,7 @@ import PostsIndexContainer from './posts/posts_index_container';
 const App = () => {
   return(
     <div>
+      Hi!
       <PostsIndexContainer />
     </div>
   );
