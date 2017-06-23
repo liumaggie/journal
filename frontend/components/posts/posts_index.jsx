@@ -27,8 +27,8 @@ class PostsIndex extends React.Component {
   }
 }
 
-{
-  this.props.posts.map((post) =>
-  <PostItem key={post.id} post={post}/>)
-  }
+// {
+//   this.props.posts.map((post) =>
+//   <PostItem key={post.id} post={post}/>)
+//   }
 export default PostsIndex;
