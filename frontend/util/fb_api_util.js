@@ -1,4 +1,4 @@
-const authToken = 'EAACEdEose0cBAHbA22WgrpKWzTLJuRasSGKSffI3WOIxuNYowz6sufSbq0KXvSaGQs5ldMGttiJH368ls28lTjCEPrJe8RSZA3GHmeBKsbx2aQxRqdfN0LuHwwiKPprDOaVYjFeaO3l7PI8hoDaSQcBrmE4MgrXtCzcStRCxomFLl3bJc0H0LN8R6JZCYZD';
+const authToken = 'EAACEdEose0cBAKvKnDsTzHDqkZC6W2NyUZAPjHx2MJ8SX4empowRHiUv5kvo4iuu64BXenL0oQGEfXXoNCvuVIG0MP7SP3ITvikBi0JWmbKncOPGxkyQkmYxgSXHoGZAEtArc9b60ROqW8CxQpQLQv1BMJPRkFAYks8CzDZAYJZBLXVuAVuyAzEKETvOILmwZD';
 
 export const fetchAllFacebookPosts = () => {
   return(

@@ -19,10 +19,7 @@ class PostsIndex extends React.Component {
       return(
         <div>
           <ul>
-            {
-              this.props.posts.map((post) =>
-              <PostItem key={post.id} post={post}/>)
-              }
+            Hello!
             </ul>
           </div>
         );
@@ -30,4 +27,8 @@ class PostsIndex extends React.Component {
   }
 }
 
+{
+  this.props.posts.map((post) =>
+  <PostItem key={post.id} post={post}/>)
+  }
 export default PostsIndex;
