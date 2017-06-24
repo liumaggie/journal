@@ -7,23 +7,66 @@
   height: 100%;
   overflow: auto;
   position: absolute;
-  width: 1200px;
+  width: 100%;
 }
 
 .post-index ul li {
   float: left;
 }
 
-.ig-photo {
-  width: 300px;
+.ig-photo-li {
+  width: 21.25%;
+}
+
+.fb-post-li-long, .title {
+  width: 35%;
+}
+
+.fb-post-li-short {
+  width: 15%;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
   height: auto;
 }
 
-.fb-post {
+.fb-post-li-long, .fb-post-li-short, .title {
   color: white;
-  height: 200px;
-  width: 500px;
   padding: 50px;
+  // height: 100%;
+  // overflow: hidden;
+  // white-space: nowrap;
+  // background: linear-gradient( 90deg, #E8CDD2, #55697B,);
+}
+
+.title, .fb-post-li-long {
+  background: linear-gradient( 90deg, rgba(232, 205, 210, 1), rgba(85, 105, 123, 0.5));
+}
+
+.fb-post-li-short {
+  background: linear-gradient( 90deg, rgba(85, 105, 123, 0.4), rgba(85, 105, 123, 0.7));
+}
+
+$font-size: 20px;
+$line-height: 1.4;
+$lines-to-show: 3;
+
+.fb-post {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: $font-size;
+  line-height: $line-height;
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   text-overflow: ellipsis;
-  background: linear-gradient( 90deg, #E8CDD2, #55697B );
+
 }
