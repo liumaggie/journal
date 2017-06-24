@@ -18,12 +18,12 @@
   width: 21.25%;
 }
 
-.fb-post-li-long, .title {
-  width: 35%;
+.fb-post-li-short {
+  width: 21.25% - 5%;
 }
 
-.fb-post-li-short {
-  width: 15%;
+.fb-post-li-long, .title {
+  width: 21.25%*2 - 5%;
 }
 
 h2 {
@@ -38,11 +38,7 @@ img {
 
 .fb-post-li-long, .fb-post-li-short, .title {
   color: white;
-  padding: 50px;
-  // height: 100%;
-  // overflow: hidden;
-  // white-space: nowrap;
-  // background: linear-gradient( 90deg, #E8CDD2, #55697B,);
+  padding: 2.5%;
 }
 
 .title, .fb-post-li-long {
