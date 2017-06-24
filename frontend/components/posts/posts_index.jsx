@@ -9,7 +9,9 @@ class PostsIndex extends React.Component {
   }
 
   componentWillMount() {
-    this.props.fetchAllFacebookPosts().then(() => this.setState({ loading: false }));
+    this.props.fetchAllFacebookPosts()
+      .then(() => this.props.fetchAllInstagramPosts())
+      .then(() => this.setState({ loading: false }));
   }
 
   render() {
@@ -19,16 +21,14 @@ class PostsIndex extends React.Component {
       return(
         <div>
           <ul>
-            Hello!
-            </ul>
-          </div>
-        );
+            {
+              this.props.posts.map((post) =>
+              <PostItem key={post.id} post={post}/>)
+            }
+          </ul>
+        </div>
+      );
     }
   }
 }
-
-// {
-//   this.props.posts.map((post) =>
-//   <PostItem key={post.id} post={post}/>)
-//   }
 export default PostsIndex;

@@ -1,4 +1,4 @@
-import * as FacebookApiUtil from '../util/fb_api_util';
+import * as ApiUtil from '../util/api_util';
 
 export const RECEIVE_POSTS = 'RECEIVE_POSTS';
 
@@ -8,6 +8,10 @@ export const receivePosts = (posts) => ({
 });
 
 export const fetchAllFacebookPosts = () => dispatch => (
-  FacebookApiUtil.fetchAllFacebookPosts()
+  ApiUtil.fetchAllFacebookPosts()
                     .then((posts) => dispatch(receivePosts(posts.data)))
+);
+
+export const fetchAllInstagramPosts = () => dispatch => (
+  dispatch(receivePosts(ApiUtil.fetchAllInstagramPosts()))
 );

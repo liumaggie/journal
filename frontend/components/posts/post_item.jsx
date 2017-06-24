@@ -6,10 +6,11 @@ class PostItem extends React.Component {
 
     return(
       <li>
-        { (post.message).includes('http') ? post.message : null}
+        { post.message ? post.message : post.id }
       </li>
     );
   }
 }
+// { (post.message).includes('http') ? post.message : null}
 
 export default PostItem;

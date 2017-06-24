@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PostsIndex from './posts_index';
-import { fetchAllFacebookPosts } from '../../actions/posts_actions';
+import { fetchAllFacebookPosts, fetchAllInstagramPosts } from '../../actions/posts_actions';
 
 const mapStateToProps = (state) => {
   return({
@@ -11,7 +11,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = (dispatch) => {
   return({
-    fetchAllFacebookPosts: () => dispatch(fetchAllFacebookPosts())
+    fetchAllFacebookPosts: () => dispatch(fetchAllFacebookPosts()),
+    fetchAllInstagramPosts: () => dispatch(fetchAllInstagramPosts())
   });
 };
 
