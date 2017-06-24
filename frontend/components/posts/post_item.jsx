@@ -5,13 +5,14 @@ class PostItem extends React.Component {
     let post = this.props.post;
     let idx = this.props.idx + 1;
     let className;
-    if (idx % 3 === 1 && post.message) {
+    if (idx % 3 === 0 && post.message) {
       className = 'fb-post-li-short';
     } else if (post.message) {
       className = 'fb-post-li-long';
     } else {
       className = 'ig-photo-li';
     }
+
     return(
       <li className={ className }>
         { post.message ?

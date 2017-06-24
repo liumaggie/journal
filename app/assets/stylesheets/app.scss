@@ -1,13 +1,14 @@
 .app {
   display: flex;
   position: relative;
+  width: 100%;
 }
 
 .post-index ul {
   height: 100%;
+  width: 100%;
   overflow: auto;
   position: absolute;
-  width: 100%;
 }
 
 .post-index ul li {
@@ -15,15 +16,15 @@
 }
 
 .ig-photo-li {
-  width: 21.25%;
+  width: 23%;
 }
 
 .fb-post-li-short {
-  width: 21.25% - 5%;
+  width: 23% - 5%;
 }
 
 .fb-post-li-long, .title {
-  width: 21.25%*2 - 5%;
+  width: 23%*2 - 5%;
 }
 
 h2 {
@@ -39,6 +40,7 @@ img {
 .fb-post-li-long, .fb-post-li-short, .title {
   color: white;
   padding: 2.5%;
+  // height: 25%;
 }
 
 .title, .fb-post-li-long {
