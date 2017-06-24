@@ -1,3 +1,29 @@
 .app {
   display: flex;
+  position: relative;
+}
+
+.post-index ul {
+  height: 100%;
+  overflow: auto;
+  position: absolute;
+  width: 1200px;
+}
+
+.post-index ul li {
+  float: left;
+}
+
+.ig-photo {
+  width: 300px;
+  height: auto;
+}
+
+.fb-post {
+  color: white;
+  height: 200px;
+  width: 500px;
+  padding: 50px;
+  text-overflow: ellipsis;
+  background: linear-gradient( 90deg, #E8CDD2, #55697B );
 }

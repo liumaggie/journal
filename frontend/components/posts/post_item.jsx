@@ -6,11 +6,12 @@ class PostItem extends React.Component {
 
     return(
       <li>
-        { post.message ? post.message : post.id }
+        { post.message ?
+          <div className='fb-post'>{ post.message }</div> :
+          <img className='ig-photo' src={`${post.images.standard_resolution.url}`} /> }
       </li>
     );
   }
 }
-// { (post.message).includes('http') ? post.message : null}
 
 export default PostItem;

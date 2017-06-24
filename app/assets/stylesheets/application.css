@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+ @import "./reset.scss";
+
+ /* Core */
+ @import "./app.scss";
+ @import "./navbar.scss";

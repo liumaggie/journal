@@ -3,17 +3,17 @@ import React from 'react';
 class NavBar extends React.Component {
   render() {
     return(
-      <header>
-        <div>JO</div>
-        <nav>
-          <div className='journal'></div>
-          <div className='neighborhood'></div>
-          <div className='amenities'></div>
-          <div className='residences'></div>
-          <div className='availabilities'></div>
-          <div className='team'></div>
-          <div className='contact'></div>
-        </nav>
+      <header className='nav-bar'>
+        <h1>JO</h1>
+        <ul className='links'>
+          <li className='journal'></li>
+          <li className='neighborhood'></li>
+          <li className='amenities'></li>
+          <li className='residences'></li>
+          <li className='availabilities'></li>
+          <li className='team'></li>
+          <li className='contact'></li>
+        </ul>
       </header>
     );
   }

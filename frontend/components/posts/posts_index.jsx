@@ -19,7 +19,7 @@ class PostsIndex extends React.Component {
       return <div></div>;
     } else {
       return(
-        <div>
+        <div className='post-index'>
           <ul>
             {
               this.props.posts.map((post) =>
