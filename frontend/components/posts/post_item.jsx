@@ -1,13 +1,6 @@
 import React from 'react';
 
 class PostItem extends React.Component {
-  componentDidMount() {
-    // console.log($('img')[0].height)
-    $('.fb-post-li-long').height($('img')[0].height);
-    $('.fb-post-li-short').height($('img')[0].height);
-    $('.title').height($('img')[0].height);
-  }
-
   render() {
     let post = this.props.post;
     let idx = this.props.idx + 1;

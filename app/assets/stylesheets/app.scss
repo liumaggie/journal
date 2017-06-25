@@ -13,6 +13,7 @@
 
 .post-index ul li {
   float: left;
+  height: 45%;
 }
 
 .ig-photo-li {
@@ -20,11 +21,11 @@
 }
 
 .fb-post-li-short {
-  width: 23% - 5%;
+  width: 23%;
 }
 
 .fb-post-li-long, .title {
-  width: 23%*2 - 5%;
+  width: 23%*2;
 }
 
 h2 {
@@ -34,13 +35,11 @@ h2 {
 
 img {
   width: 100%;
-  height: auto;
+  // height: 100%;
 }
 
 .fb-post-li-long, .fb-post-li-short, .title {
   color: white;
-  padding: 2.5%;
-  // height: 25%;
 }
 
 .title, .fb-post-li-long {
@@ -58,7 +57,8 @@ $lines-to-show: 3;
 .fb-post {
   display: block; /* Fallback for non-webkit */
   display: -webkit-box;
-  height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
+  // height: auto;
+  // height: $font-size*$line-height*$lines-to-show; /* Fallback for non-webkit */
   margin: 0 auto;
   font-size: $font-size;
   line-height: $line-height;
@@ -66,5 +66,13 @@ $lines-to-show: 3;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 50px;
+}
 
+.title div {
+  margin: 50px;
+}
+
+p {
+  margin-top: 20px;
 }
