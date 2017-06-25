@@ -3,12 +3,18 @@ import React from 'react';
 class PostItem extends React.Component {
   render() {
     let post = this.props.post;
-    let idx = this.props.idx + 1;
+    let idx = this.props.idx+1;
     let className;
-    if (idx % 3 === 0 && post.message) {
+    if ((idx === 0 || idx === 1) && post.message) {
       className = 'fb-post-li-short';
-    } else if (post.message) {
+    } else if (idx === 0 || idx === 1) {
+      className = 'ig-photo-li';
+    } else if (idx % 3 === 1 && post.message) {
+      className = 'fb-post-li-short';
+    } else if (idx % 3 === 2 && post.message) {
       className = 'fb-post-li-long';
+    } else if (post.message) {
+      className = 'fb-post-li-short';
     } else {
       className = 'ig-photo-li';
     }
