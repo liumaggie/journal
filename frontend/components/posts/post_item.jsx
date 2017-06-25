@@ -1,4 +1,5 @@
 import React from 'react';
+import PostModal from '../modal/post_modal';
 
 class PostItem extends React.Component {
   render() {
@@ -20,11 +21,7 @@ class PostItem extends React.Component {
     }
 
     return(
-      <li className={ className }>
-        { post.message ?
-          <div className='fb-post'>{ post.message }</div> :
-          <img className='ig-photo' src={`${post.images.standard_resolution.url}`} /> }
-      </li>
+      <PostModal post={post} idx={idx} />
     );
   }
 }

@@ -1,5 +1,6 @@
 import React from 'react';
 import PostItem from './post_item';
+import PostModal from '../modal/post_modal';
 
 class PostsIndex extends React.Component {
   constructor(props) {
@@ -32,7 +33,7 @@ class PostsIndex extends React.Component {
             </li>
             {
               this.props.posts.map((post, idx) =>
-              <PostItem key={post.id} post={post} idx={idx}/>)
+              <PostModal key={post.id} post={post} idx={idx}/>)
             }
 
           </ul>

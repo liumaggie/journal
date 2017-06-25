@@ -1,0 +1,36 @@
+.ReactModal__Body--open {
+  overflow-y: hidden;
+}
+
+.post {
+  background: white;
+  border: 10px solid black;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+}
+
+.ig-modal img {
+  width: 100%;
+}
+
+.ig-modal p,
+.fb-modal p {
+  padding: 20px;
+  word-break: break-all;
+}
+
+.modal {
+  display: flex;
+}
+
+.fa-times-circle-o {
+  background: transparent;
+  font-size: 72px !important;
+  position: absolute;
+  top: 45%;
+  left: 35%;
+  cursor: pointer;
+}
