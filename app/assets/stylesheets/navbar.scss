@@ -1,5 +1,6 @@
 h1 {
-  font-size: 50px;
+  font-size: 52px;
+  font-family: 'SimplonMono-Medium';
 }
 
 .nav-bar {
@@ -10,6 +11,19 @@ h1 {
   box-shadow: 0px 0px 10px gray;
   float: left;
   z-index: 2;
+}
+
+.full-nav div {
+  display: flex;
+  align-items: center;
+}
+
+.square {
+  margin-bottom: 7.2px;
+  width: 25px;
+  height: 25px;
+  background: transparent;
+  border: 5.5px solid black;
 }
 
 .links {
@@ -26,30 +40,34 @@ h1 {
   cursor: pointer;
 }
 
+.links p {
+  transform: rotate(-45deg) translateX(-15px);
+}
+
 .journal {
-  background-color: #7FDBFF;
+  background-color: rgba(232, 205, 210, 1);
 }
 
 .neighborhood {
-  background-color: #D8EFF6;
+  background-color: rgba(85, 105, 123, 0.5);
 }
 
 .amenities {
-  background-color: #7FDBFF;
+  background-color: rgba(232, 205, 210, 1);
 }
 
 .residences {
-  background-color: #D8EFF6;
+  background-color: rgba(85, 105, 123, 0.5);
 }
 
 .availabilities {
-  background-color: #7FDBFF;
+  background-color: rgba(232, 205, 210, 1);
 }
 
 .team {
-  background-color: #D8EFF6;
+  background-color: rgba(85, 105, 123, 0.5);
 }
 
 .contact {
-  background-color: #D8EFF6;
+  background-color: rgba(232, 205, 210, 1);
 }

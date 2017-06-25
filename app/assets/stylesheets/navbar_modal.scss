@@ -1,0 +1,29 @@
+.navbar-modal {
+  background: linear-gradient( 90deg, rgba(85, 105, 123, 0.7), rgba(85, 105, 123, 0.4));
+  border: 10px solid black;
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.nav-bar-modal {
+  width: 15%;
+  background-color: white;
+  padding: 30px;
+  box-shadow: 0px 0px 10px gray;
+  float: left;
+  z-index: 2;
+}
+
+.nav-title h1{
+  font-size: 20px;
+  line-height: 0.8;
+  font-family: "SimplonMono-Bold";
+}
+
+.nav-title {
+  display: flex;
+  flex-direction: column;
+}

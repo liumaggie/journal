@@ -1,5 +1,5 @@
-body, html {
-  font-family: "SimplonMono-Bold";
+body {
+  font-family: "SimplonNorm-Light";
 }
 
 .app {
@@ -90,6 +90,10 @@ $lines-to-show: 3;
 
 .title p {
   margin-top: 20px;
+}
+
+.hidden {
+  display: none;
 }
 
 @media screen and (max-width: 1300px) {
