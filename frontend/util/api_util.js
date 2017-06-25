@@ -1,6 +1,6 @@
 const instagramData = require('../../app/assets/javascripts/instagram.json')
 
-const authToken = 'EAACEdEose0cBADYMQQad37NjKeTKjmqSAiHNNWcAcvp25VfbFdEgqfpCPFf7qlSzIE2k3H0sn9RINqAATixn2zbxKBqrhKfqqNVPYnaLWTHmIfsTeiELp4l4zBBHsdeqbumh9zbELjIprHZCyGl7DgOKxxxrugHccxAZAjIv6vm5ZCEBtk7pThaxgaXcRgZD';
+const authToken = 'EAACEdEose0cBAOzlKsjHsfpsgeyoXvetQUHgw8wuXUT5zkZClTzl25IpaRcFm4onFy8ZCQhU431kZAezxZA7d0YRl3vOWde0ndAxE2J7lZBgYv2YZBR2f1C6VkabZAKrZBpo1hw2hUb7LbmMiVbeHyQUYdbbIJhy8i4VkgfCyJRNthndW418XhDqWY6xxr8cedgZD';
 
 export const fetchAllFacebookPosts = () => {
   return(
