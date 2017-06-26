@@ -73,8 +73,6 @@ class NavBar extends React.Component {
             {links}
           </div>
 
-          <i className="fa fa-bars"></i>
-
           <Modal
             className="navbar-modal"
             isOpen={this.state.modalIsOpen}
@@ -96,8 +94,6 @@ class NavBar extends React.Component {
             <div><h1>J</h1><h3 className='square'></h3></div>
             {links}
           </div>
-
-          <i onClick={this.openModal} className="fa fa-bars"></i>
 
           <Modal
             className="navbar-modal"

@@ -117,7 +117,7 @@ $lines-to-show: 3;
   top: 90%;
 }
 
-.fa-bars, .bar-border {
+.fa-bars{
   visibility: hidden;
   position: absolute;
 }
@@ -150,6 +150,24 @@ $lines-to-show: 3;
   .title div {
     margin: 4%;
   }
+
+  .post {
+    background: white;
+    border: 10px solid black;
+    width: 50%;
+    height: 90vh;
+    overflow:auto;
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+  }
+
+  .fa-times-circle-o {
+    font-size: 36px !important;
+    top: 1%;
+    left: 95%;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -178,7 +196,6 @@ $lines-to-show: 3;
   .title h2 {
     font-size: 30px;
   }
-
 }
 
 @media screen and (max-width: 650px) {
@@ -194,6 +211,13 @@ $lines-to-show: 3;
     font-size: 24px;
   }
 
+  .post {
+    width: 60%;
+  }
+
+  .fa-times-circle-o {
+    left: 92%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -251,6 +275,7 @@ $lines-to-show: 3;
   }
 
   .fa-bars {
+    position: absolute;
     color: black;
     background-color: transparent;
     visibility: visible;
@@ -260,6 +285,11 @@ $lines-to-show: 3;
     margin: 10px;
     padding: 3px;
     cursor: pointer;
+  }
+
+  .fa-bars:hover {
+    color: white;
+    border: 3px solid white;
   }
 
   .nav-bar-modal {
@@ -274,4 +304,8 @@ $lines-to-show: 3;
     transition: transform 1s ease-in-out;
   }
 
+  .post {
+    width: 80%;
+    left: 49%;
+  }
 }
