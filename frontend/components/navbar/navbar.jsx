@@ -91,7 +91,7 @@ class NavBar extends React.Component {
       return(
         <header onClick={this.openModal} className='nav-bar'>
           <div className='full-nav'>
-            <div><h1>J</h1><h3 className='square'></h3></div>
+            <div className='nav-title-short'><h1>J</h1><h3 className='square'></h3></div>
             {links}
           </div>
 
