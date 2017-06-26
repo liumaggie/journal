@@ -40,6 +40,12 @@ h1 {
   cursor: pointer;
 }
 
+.nav-bar .links li:hover > p {
+  display: inline;
+  position: absolute;
+  margin-top: 5vh;
+}
+
 .journal {
   background-color: rgba(232, 205, 210, 1);
 }
