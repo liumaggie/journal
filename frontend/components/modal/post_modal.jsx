@@ -58,6 +58,10 @@ class PostModal extends React.Component {
             <div className='fb-post'>{ post.message }</div> :
             <img className='ig-photo' src={`${post.images.standard_resolution.url}`} /> }
 
+          { post.message ?
+            <i className="fa fa-facebook-square"></i> :
+            <i className="fa fa-instagram"></i>
+          }
 
         <Modal
           className="post-modal"

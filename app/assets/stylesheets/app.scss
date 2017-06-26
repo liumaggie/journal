@@ -5,7 +5,7 @@ body {
 .app {
   display: flex;
   position: relative;
-  width: 100%;
+  width: 99%;
   height: 100vh;
 }
 
@@ -24,6 +24,24 @@ body {
   float: left;
   height: 45%;
   cursor: pointer;
+  position: relative;
+}
+
+.post-index ul li i {
+  z-index: 2;
+  font-size: 24px;
+  position: absolute;
+}
+
+.fb-post-li-short i,
+.ig-photo-li i {
+  top: 90%;
+  left: 90%;
+}
+
+.fb-post-li-long > i {
+  left: 95%;
+  top: 90%;
 }
 
 .post-index li:hover {
@@ -95,6 +113,7 @@ $lines-to-show: 3;
 .hidden {
   display: none;
 }
+
 
 @media screen and (max-width: 1300px) {
   .post-index ul li {
