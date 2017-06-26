@@ -117,6 +117,11 @@ $lines-to-show: 3;
   top: 90%;
 }
 
+.fa-bars, .bar-border {
+  visibility: hidden;
+  position: absolute;
+}
+
 @media screen and (max-width: 1300px) {
   .post-index ul li {
     height: 38%;
@@ -188,9 +193,14 @@ $lines-to-show: 3;
   .title h2 {
     font-size: 24px;
   }
+
 }
 
 @media screen and (max-width: 500px) {
+  .app {
+    width: 100%;
+  }
+
   .nav-bar {
     display: none;
   }
@@ -238,6 +248,30 @@ $lines-to-show: 3;
     overflow: hidden;
     text-overflow: ellipsis;
     margin: 50px;
+  }
+
+  .fa-bars {
+    color: black;
+    background-color: transparent;
+    visibility: visible;
+    display: absolute;
+    z-index: 2;
+    border: 3px solid black;
+    margin: 10px;
+    padding: 3px;
+    cursor: pointer;
+  }
+
+  .nav-bar-modal {
+    width: 30%;
+    height: 100vh;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 0px 10px gray;
+    float: left;
+    z-index: 2;
+    transform: translateX(10%);
+    transition: transform 1s ease-in-out;
   }
 
 }

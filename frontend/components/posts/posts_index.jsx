@@ -1,12 +1,14 @@
 import React from 'react';
 import PostItem from './post_item';
 import PostModal from '../modal/post_modal';
+import MobileNavBar from '../navbar/mobile_navbar';
 
 class PostsIndex extends React.Component {
   constructor(props) {
     super(props);
 
     this.state = { loading: true };
+    this.displayNav = this.displayNav.bind(this);
   }
 
   componentWillMount() {
@@ -15,12 +17,54 @@ class PostsIndex extends React.Component {
       .then(() => this.setState({ loading: false }));
   }
 
+  displayNav() {
+    $('.full-nav').css('display', 'block');
+    $('.full-nav').css('z-index', 5);
+  }
+
   render() {
+    const links = <ul className='links'>
+      <li>
+        <div className='journal'></div>
+        <p>JOURNAL</p>
+      </li>
+
+      <li>
+        <div className='neighborhood'></div>
+        <p>NEIGHBORHOOD</p>
+      </li>
+
+      <li>
+        <div className='amenities'></div>
+        <p>AMENITIES</p>
+      </li>
+
+      <li>
+        <div className='residences'></div>
+        <p>RESIDENCES</p>
+      </li>
+
+      <li>
+        <div className='availabilities'></div>
+        <p>AVAILABILITIES</p>
+      </li>
+
+      <li>
+        <div className='team'></div>
+        <p>TEAM</p>
+      </li>
+
+      <li>
+        <div className='contact'></div>
+        <p>CONTACT</p>
+      </li>
+    </ul>;
     if (this.state.loading) {
       return <div></div>;
     } else {
       return(
         <div className='post-index'>
+          <MobileNavBar />
           <ul>
             <li className='title'>
               <div>

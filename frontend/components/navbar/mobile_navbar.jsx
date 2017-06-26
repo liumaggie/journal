@@ -3,11 +3,11 @@ import Modal from 'react-modal';
 
 const customStyles = {
   overlay: {
-      backgroundColor: 'rgba(85, 105, 123, 0.8)'
+      backgroundColor: 'rgba(85, 105, 123, 0.4)'
     }
 };
 
-class NavBar extends React.Component {
+class MobileNavBar extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -19,10 +19,12 @@ class NavBar extends React.Component {
   }
 
   openModal() {
+    $('.fa-bars').css('visibility', 'hidden');
     this.setState({modalIsOpen: true});
   }
 
   closeModal() {
+    $('.fa-bars').css('visibility', 'visible');
     this.setState({modalIsOpen: false});
   }
 
@@ -65,57 +67,34 @@ class NavBar extends React.Component {
       </li>
     </ul>;
 
-    if (this.state.modalIsOpen) {
       return(
-        <header onClick={this.closeModal} className='nav-bar-modal'>
-          <div className='full-nav'>
-            <div className='nav-title'><h1>JOURNAL</h1><h1>SQUARED</h1></div>
-            {links}
-          </div>
+        <header onClick={this.openModal} className='mobile-nav-bar'>
+            <i onClick={this.openModal} className="fa fa-bars"></i>
 
-          <i className="fa fa-bars"></i>
 
           <Modal
-            className="navbar-modal"
+            className="mobile-navbar-modal"
             isOpen={this.state.modalIsOpen}
             onRequestClose={this.closeModal}
             style={customStyles}
             contentLabel="NavBar Modal"
             >
 
-            <h2>The Journal</h2>
-            <p>Journal Squared invites a new generation to up and coming Jersey City leo mattis euismod ac id ipsum. Phasellus urna eros, auctor eget urna in, lacinia gravida justo. Nunc et enim sed odio placerat pharetra. Curabitur at nunc eu mi condimentum lobortis.</p>
+            <header onClick={this.closeModal} className='nav-bar-modal'>
+              <div className='full-nav'>
+                <div className='nav-title'><h1>JOURNAL</h1><h1>SQUARED</h1></div>
+                {links}
+              </div>
 
+
+            </header>
           </Modal>
-        </header>
-      )
-    } else {
-      return(
-        <header onClick={this.openModal} className='nav-bar'>
-          <div className='full-nav'>
-            <div><h1>J</h1><h3 className='square'></h3></div>
-            {links}
-          </div>
 
-          <i onClick={this.openModal} className="fa fa-bars"></i>
-
-          <Modal
-            className="navbar-modal"
-            isOpen={this.state.modalIsOpen}
-            onRequestClose={this.closeModal}
-            style={customStyles}
-            contentLabel="NavBar Modal"
-            >
-
-            <h2>The Journal</h2>
-            <p>Journal Squared invites a new generation to up and coming Jersey City leo mattis euismod ac id ipsum. Phasellus urna eros, auctor eget urna in, lacinia gravida justo. Nunc et enim sed odio placerat pharetra. Curabitur at nunc eu mi condimentum lobortis.</p>
-
-          </Modal>
         </header>
       );
 
-    }
+
   }
 }
 
-export default NavBar;
+export default MobileNavBar;
