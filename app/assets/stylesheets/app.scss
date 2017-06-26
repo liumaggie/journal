@@ -112,7 +112,7 @@ $lines-to-show: 3;
   left: 90%;
 }
 
-.fb-post-li-long > i {
+.fb-post-li-long i {
   left: 95%;
   top: 90%;
 }
@@ -139,6 +139,17 @@ $lines-to-show: 3;
 
   .title div {
     margin: 7%;
+  }
+
+  .fb-post-li-short i,
+  .ig-photo-li i {
+    top: 86%;
+    left: 86%;
+  }
+
+  .fb-post-li-long i {
+    left: 91%;
+    top: 86%;
   }
 }
 
@@ -196,6 +207,17 @@ $lines-to-show: 3;
   .title h2 {
     font-size: 30px;
   }
+
+  .fb-post-li-short i,
+  .ig-photo-li i {
+    top: 84%;
+    left: 84%;
+  }
+
+  .fb-post-li-long i {
+    left: 89%;
+    top: 84%;
+  }
 }
 
 @media screen and (max-width: 650px) {
@@ -218,6 +240,18 @@ $lines-to-show: 3;
   .fa-times-circle-o {
     left: 92%;
   }
+
+  .fb-post-li-short i,
+  .ig-photo-li i {
+    top: 80%;
+    left: 82%;
+  }
+
+  .fb-post-li-long i {
+    left: 89%;
+    top: 80%;
+  }
+
 }
 
 @media screen and (max-width: 500px) {
@@ -308,4 +342,11 @@ $lines-to-show: 3;
     width: 80%;
     left: 49%;
   }
+
+  .fb-post-li-short i,
+  .ig-photo-li i {
+    top: 86%;
+    left: 87%;
+  }
+
 }
