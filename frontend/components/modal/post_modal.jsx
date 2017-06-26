@@ -54,6 +54,7 @@ class PostModal extends React.Component {
     return(
 
         <li onClick={this.openModal} className={ this.findClass() }>
+
           { post.message ?
             <div className='fb-post'>{ post.message }</div> :
             <img className='ig-photo' src={`${post.images.standard_resolution.url}`} /> }
@@ -75,7 +76,20 @@ class PostModal extends React.Component {
             <i onClick={this.closeModal} className="fa fa-times-circle-o"></i>
             <div className='post'>
               { post.message ?
+                <div className='post-modal-header'>
+                  <i className="fa fa-facebook-square"></i>
+                  <p>journalsquaredjc</p>
+                </div> :
+
+                <div className='post-modal-header'>
+                  <i className="fa fa-instagram"></i>
+                  <p>journalsquared</p>
+                </div>
+              }
+
+              { post.message ?
                 <div className='fb-modal'>
+                  <img src={ window.images.fbPhoto } />
                   <p>{post.message}</p>
                 </div> :
                 <div className='ig-modal'>

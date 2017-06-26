@@ -17,13 +17,6 @@ module.exports = {
       }
     ]
   },
-  node: {
-    fs: 'empty',
-    net: 'empty',
-    tls: 'empty',
-    dns: 'empty',
-    child_process: 'empty'
-  },
   devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.jsx', '*']
