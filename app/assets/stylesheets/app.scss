@@ -23,8 +23,11 @@ body {
 .post-index li {
   float: left;
   height: 45%;
-  cursor: pointer;
   position: relative;
+}
+
+.post-index li:not(:first-child) {
+  cursor: pointer;
 }
 
 .post-index li:not(:first-child):hover {
@@ -32,16 +35,13 @@ body {
   opacity: 0.8;
 }
 
-.ig-photo-li {
-  width: 23%;
-}
-
+.ig-photo-li,
 .fb-post-li-short {
   width: 23%;
 }
 
 .fb-post-li-long, .title {
-  width: 23%*2;
+  width: 46%;
 }
 
 h2 {
@@ -85,11 +85,16 @@ $lines-to-show: 3;
 }
 
 .title div {
-  margin: 50px;
+  display: block;
+  margin: 10%;
+  position: absolute;
+  top: 3%;
+  height: 45%;
 }
 
 .title p {
   margin-top: 20px;
+  overflow: hidden;
 }
 
 .hidden {
@@ -117,17 +122,28 @@ $lines-to-show: 3;
     height: 38%;
   }
 
+  .title div {
+    top: 0%;
+  }
 }
 
 @media screen and (max-width: 1100px) {
   .post-index ul li {
     height: 35%;
   }
+
+  .title div {
+    margin: 7%;
+  }
 }
 
 @media screen and (max-width: 950px) {
   .post-index ul li {
     height: 30%;
+  }
+
+  .title div {
+    margin: 4%;
   }
 }
 
@@ -149,6 +165,15 @@ $lines-to-show: 3;
     text-overflow: ellipsis;
     margin: 30px;
   }
+
+  .title p {
+    font-size: 12px;
+  }
+
+  .title h2 {
+    font-size: 30px;
+  }
+
 }
 
 @media screen and (max-width: 650px) {
@@ -156,6 +181,13 @@ $lines-to-show: 3;
     height: 20%;
   }
 
+  .title p {
+    font-size: 10px;
+  }
+
+  .title h2 {
+    font-size: 24px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -174,6 +206,25 @@ $lines-to-show: 3;
     height: 30%;
   }
 
+  .post-index ul li:first-child {
+    width: 100%;
+  }
+
+  .title div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+  }
+
+  .title h2 {
+    font-size: 36px;
+  }
+
+  .title p {
+    font-size: 16px;
+    text-align: center;
+  }
 
   .fb-post {
     display: block; /* Fallback for non-webkit */
