@@ -32,16 +32,12 @@ h1 {
   align-items: center;
 }
 
-.links > li {
+.links > li > div {
   margin: 4.5vh 0px;
   height: 20px;
   width: 20px;
   transform: rotate(45deg);
   cursor: pointer;
-}
-
-.links p {
-  transform: rotate(-45deg) translateX(-15px);
 }
 
 .journal {

@@ -29,13 +29,40 @@ class NavBar extends React.Component {
   render() {
     const linkTitleClass = this.state.modalIsOpen ? '' : 'hidden';
     const links = <ul className='links'>
-      <li className='journal'><p className={linkTitleClass}>Journal</p></li>
-      <li className='neighborhood'><p className={linkTitleClass}>Neighborhood</p></li>
-      <li className='amenities'><p className={linkTitleClass}>Amenities</p></li>
-      <li className='residences'><p className={linkTitleClass}>Residences</p></li>
-      <li className='availabilities'><p className={linkTitleClass}>Availabilities</p></li>
-      <li className='team'><p className={linkTitleClass}>Team</p></li>
-      <li className='contact'><p className={linkTitleClass}>Contact</p></li>
+      <li>
+        <div className='journal'></div>
+        <p className={linkTitleClass}>JOURNAL</p>
+      </li>
+
+      <li>
+        <div className='neighborhood'></div>
+        <p className={linkTitleClass}>NEIGHBORHOOD</p>
+      </li>
+
+      <li>
+        <div className='amenities'></div>
+        <p className={linkTitleClass}>AMENITIES</p>
+      </li>
+
+      <li>
+        <div className='residences'></div>
+        <p className={linkTitleClass}>RESIDENCES</p>
+      </li>
+
+      <li>
+        <div className='availabilities'></div>
+        <p className={linkTitleClass}>AVAILABILITIES</p>
+      </li>
+
+      <li>
+        <div className='team'></div>
+        <p className={linkTitleClass}>TEAM</p>
+      </li>
+
+      <li>
+        <div className='contact'></div>
+        <p className={linkTitleClass}>CONTACT</p>
+      </li>
     </ul>;
 
     if (this.state.modalIsOpen) {
