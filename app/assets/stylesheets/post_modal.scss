@@ -37,6 +37,10 @@
   cursor: pointer;
 }
 
+.fa-times-circle-o:hover {
+  color: white;
+}
+
 .post-modal-header {
   display: flex;
   align-items: center;
@@ -53,4 +57,35 @@
 
 .post p {
   font-family: "SimplonNorm-Regular";
+}
+
+.share {
+  display: flex;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-facebook-official,
+.fa-twitter,
+.fa-envelope {
+  color: #6B7A88;
+}
+
+.fa-facebook-official:hover {
+  color: #4267B2;
+}
+
+.fa-twitter:hover {
+  color: #53A9EA;
+}
+
+.fa-envelope:hover {
+  color: #D84A38;
+}
+
+.left:hover {
+  color: #6B7A88;
 }

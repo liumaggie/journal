@@ -75,17 +75,41 @@ class PostModal extends React.Component {
           <div className='modal'>
             <i onClick={this.closeModal} className="fa fa-times-circle-o"></i>
             <div className='post'>
-              { post.message ?
-                <div className='post-modal-header'>
-                  <i className="fa fa-facebook-square"></i>
-                  <p>journalsquaredjc</p>
-                </div> :
 
-                <div className='post-modal-header'>
-                  <i className="fa fa-instagram"></i>
-                  <p>journalsquared</p>
+              <div className='header'>
+                <div className='left'>
+                  { post.message ?
+                    <a href={`https://www.facebook.com/journalsquaredjc/posts/${post.id.split("_")[1]}`} className='post-modal-header'>
+                      <i className="fa fa-facebook-square"></i>
+                      <p>journalsquaredjc</p>
+                    </a> :
+
+                    <a href={`https://www.instagram.com/p/${post.code}`} className='post-modal-header'>
+                      <i className="fa fa-instagram"></i>
+                      <p>journalsquared</p>
+                    </a>
+                  }
                 </div>
-              }
+
+                <div className='share'>
+                  <div className="fb-share-button"
+                    data-href="https://qb-journal.herokuapp.com/#/"
+                    data-mobile-iframe="true"><a className="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fqb-journal.herokuapp.com%2F%23%2F&amp;src=sdkpreparse">
+                    <i className="fa fa-facebook-official" aria-hidden="true"></i></a></div>
+
+                    <a href="https://twitter.com/share?
+                      url=https%3A%2F%2Fqb-journal.herokuapp.com&">
+                      <i className="fa fa-twitter" aria-hidden="true"></i>
+                    </a>
+
+                    <a href="mailto:?body=https://qb-journal.herokuapp.com/#/">
+                      <i className="fa fa-envelope" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+              </div>
+
+
 
               { post.message ?
                 <div className='fb-modal'>
