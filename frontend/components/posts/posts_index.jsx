@@ -8,18 +8,12 @@ class PostsIndex extends React.Component {
     super(props);
 
     this.state = { loading: true };
-    this.displayNav = this.displayNav.bind(this);
   }
 
   componentWillMount() {
     this.props.fetchAllFacebookPosts()
       .then(() => this.props.fetchAllInstagramPosts())
       .then(() => this.setState({ loading: false }));
-  }
-
-  displayNav() {
-    $('.full-nav').css('display', 'block');
-    $('.full-nav').css('z-index', 5);
   }
 
   render() {
