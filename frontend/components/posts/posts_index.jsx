@@ -1,5 +1,4 @@
 import React from 'react';
-import PostItem from './post_item';
 import PostModal from '../modal/post_modal';
 import MobileNavBar from '../navbar/mobile_navbar';
 
