@@ -19,12 +19,12 @@ class MobileNavBar extends React.Component {
   }
 
   openModal() {
-    $('.fa-bars').css('visibility', 'hidden');
+    $('.fa-bars').css('z-index', 0);
     this.setState({modalIsOpen: true});
   }
 
   closeModal() {
-    $('.fa-bars').css('visibility', 'visible');
+    $('.fa-bars').css('z-index', 1);
     this.setState({modalIsOpen: false});
   }
 

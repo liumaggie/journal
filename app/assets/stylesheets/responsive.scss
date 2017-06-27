@@ -7,12 +7,10 @@
     top: 0%;
   }
 
-  // .app {
-  //   width: 98%;
-  // }
-  .nav-bar {
-    width: 4.3%;
+  .app {
+    width: 98.5%;
   }
+
 }
 
 @media screen and (max-width: 1250px) {
@@ -20,18 +18,14 @@
     height: 37%;
   }
 
-  .nav-bar {
-    width: 4%;
+  .app {
+    width: 98%;
   }
 }
 
 @media screen and (max-width: 1175px) {
   .post-index ul li {
     height: 35%;
-  }
-
-  .nav-bar {
-    width: 4%;
   }
 }
 
@@ -54,19 +48,21 @@
     left: 91%;
     top: 86%;
   }
-
-  // .app {
-  //   width: 98%;
-  // }
 }
 
 @media screen and (max-width:1075px) {
   .post-index ul li {
     height: 35%;
   }
+}
 
-  .nav-bar {
-    width: 4%;
+@media screen and (max-width:1020px) {
+  .post-index ul li {
+    height: 32%;
+  }
+
+  .app {
+    width: 97%;
   }
 }
 
@@ -97,12 +93,10 @@
     left: 95%;
   }
 
-  // .app {
-  //   width: 95%;
-  // }
-  .nav-bar {
-    width: 3%;
+  .app {
+    width: 96.5%;
   }
+
 }
 
 @media screen and (max-width: 850px) {
@@ -111,7 +105,17 @@
   }
 
   .app {
-    width: 98%;
+    width: 96%;
+  }
+
+  .title p {
+    font-size: 12px;
+    margin-top: 3px;
+  }
+
+  .title h2 {
+    margin-top: 10px;
+    font-size: 30px;
   }
 }
 
@@ -134,14 +138,6 @@
     margin: 30px;
   }
 
-  .title p {
-    font-size: 12px;
-  }
-
-  .title h2 {
-    font-size: 30px;
-  }
-
   .fb-post-li-short i,
   .ig-photo-li i {
     top: 84%;
@@ -154,23 +150,23 @@
   }
 
   .app {
-    width: 97.5%;
+    width: 95.5%;
   }
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 740px) {
   .app {
-    width: 96%;
+    width: 94.5%;
   }
 
   .post-index ul li {
-    height: 23%;
+    height: 22%;
   }
 }
 
 @media screen and (max-width: 650px) {
   .post-index ul li {
-    height: 20%;
+    height: 19%;
   }
 
   .title p {
@@ -201,36 +197,17 @@
   }
 
   .app {
-    width: 95%;
+    width: 93.5%;
   }
 }
 
 @media screen and (max-width:600px) {
   .post-index ul li {
-    height: 19%;
+    height: 17%;
   }
 
   .app {
-    width: 93.5%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  .post-index ul li {
-    height: 25%;
-  }
-
-  .app {
-    width: 100%;
-  }
-
-  .nav-bar {
-    display: none;
-  }
-
-  .app {
-    display: flex;
-    flex-direction: column;
+    width: 86%;
   }
 
   .post-index ul li {
@@ -257,6 +234,30 @@
   .title p {
     font-size: 16px;
     text-align: center;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+  .post-index ul li {
+    height: 25%;
+  }
+
+  .app {
+    width: 100%;
+  }
+
+  .nav-bar {
+    display: none;
+  }
+
+  .app {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .title p {
+    font-size: 14px;
   }
 
   .fb-post {
@@ -313,6 +314,10 @@
   .ig-photo-li i {
     top: 86%;
     left: 87%;
+  }
+
+  .fa-bars {
+    visibility: visible;
   }
 
 }
