@@ -11,6 +11,9 @@
     width: 98.5%;
   }
 
+  .navbar-modal {
+    left: 60%;
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -89,8 +92,13 @@
 
   .fa-times-circle-o {
     font-size: 36px !important;
+    color: white;
     top: 1%;
     left: 95%;
+  }
+
+  .fa-times-circle-o:hover {
+    color: rgba(232, 205, 210, 0.8);
   }
 
   .app {
@@ -316,8 +324,8 @@
     left: 87%;
   }
 
-  .fa-bars {
-    visibility: visible;
+  .navbar-modal {
+    left: 75%;
   }
 
 }
