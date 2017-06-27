@@ -13,11 +13,12 @@
  *= require_self
  */
 
- @import "./fonts.scss";
- @import "./reset.scss";
+@import "./fonts.scss";
+@import "./reset.scss";
 
  /* Core */
- @import "./navbar.scss";
+@import "./navbar.scss";
 @import "./post_modal.scss";
 @import "./navbar_modal.scss";
 @import "./app.scss";
+@import "./responsive.scss";
