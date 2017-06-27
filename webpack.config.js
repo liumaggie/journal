@@ -1,4 +1,6 @@
 const path = require('path');
+const webpack = require('webpack');
+const prod = process.argv.indexOf('-p') !== -1;
 
 module.exports = {
   entry: './frontend/journal.jsx',
@@ -20,5 +22,13 @@ module.exports = {
   devtool: 'source-map',
   resolve: {
     extensions: ['.js', '.jsx', '*']
-  }
+  },
+  plugins: [
+    new webpack.DefinePlugin({
+      'process.env': {
+        NODE_ENV: JSON.stringify('production')
+      }
+    }),
+    new webpack.optimize.UglifyJsPlugin()
+  ]
 };
