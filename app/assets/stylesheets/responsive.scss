@@ -1,6 +1,6 @@
 @media screen and (max-width: 1300px) {
   .post-index ul li {
-    height: 40%;
+    width: 30%;
   }
 
   .title div {
@@ -13,6 +13,10 @@
 
   .navbar-modal {
     left: 60%;
+  }
+
+  .app {
+    height: 1000px;
   }
 }
 

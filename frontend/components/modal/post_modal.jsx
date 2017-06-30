@@ -32,9 +32,9 @@ class PostModal extends React.Component {
     let idx = this.props.idx+1;
 
     let className;
-    if ((idx === 0 || idx === 1) && post.message) {
+    if ((idx === 1 || idx === 2) && post.message) {
       className = 'fb-post-li-short';
-    } else if (idx === 0 || idx === 1) {
+    } else if (idx === 1 || idx === 2) {
       className = 'ig-photo-li';
     } else if (idx % 3 === 1 && post.message) {
       className = 'fb-post-li-short';
