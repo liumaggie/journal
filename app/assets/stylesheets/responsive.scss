@@ -1,14 +1,10 @@
 @media screen and (max-width: 1300px) {
   .post-index ul li {
-    height: 30%;
+    height: 43%;
   }
 
   .title div {
     top: 0%;
-  }
-
-  .app {
-    width: 98.5%;
   }
 
   .navbar-modal {
@@ -16,30 +12,28 @@
   }
 
   .app {
-    height: 1000px;
+    width: 98%;
   }
 }
 
 @media screen and (max-width: 1250px) {
   .post-index ul li {
-    height: 29%;
+    height: 42%;
   }
 
-  .app {
-    width: 98%;
-  }
 }
 
 @media screen and (max-width: 1175px) {
   .post-index ul li {
-    height: 26%;
+    height: 40%;
+  }
+
+  .app {
+    width: 97.5%;
   }
 }
 
 @media screen and (max-width: 1100px) {
-  .post-index ul li {
-    height: 26%;
-  }
 
   .title div {
     margin: 7%;
@@ -59,13 +53,13 @@
 
 @media screen and (max-width:1075px) {
   .post-index ul li {
-    height: 25%;
+    height: 37%;
   }
 }
 
 @media screen and (max-width:1020px) {
   .post-index ul li {
-    height: 22%;
+    height: 32%;
   }
 
   .app {
@@ -75,7 +69,7 @@
 
 @media screen and (max-width: 950px) {
   .post-index ul li {
-    height: 20%;
+    height: 30%;
   }
 
   .title div {
@@ -106,18 +100,18 @@
   }
 
   .app {
-    width: 96.5%;
+    width: 96%;
   }
 
 }
 
 @media screen and (max-width: 850px) {
   .post-index ul li {
-    height: 18%;
+    height: 28%;
   }
 
   .app {
-    width: 96%;
+    width: 95.5%;
   }
 
   .title p {
@@ -133,7 +127,7 @@
 
 @media screen and (max-width: 800px) {
   .post-index ul li {
-    height: 15%;
+    height: 24%;
   }
 
   .fb-post {
@@ -160,25 +154,21 @@
     left: 89%;
     top: 84%;
   }
-
-  .app {
-    width: 95.5%;
-  }
 }
 
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 780px) {
   .app {
-    width: 94.5%;
+    width: 94%;
   }
 
   .post-index ul li {
-    height: 14%;
+    height: 22%;
   }
 }
 
 @media screen and (max-width: 650px) {
   .post-index ul li {
-    height: 12%;
+    height: 20%;
   }
 
   .title p {
@@ -209,15 +199,11 @@
   }
 
   .app {
-    width: 93.5%;
+    width: 93%;
   }
 }
 
 @media screen and (max-width:600px) {
-  .post-index ul li {
-    height: 7%;
-  }
-
   .app {
     width: 86%;
   }
@@ -225,7 +211,7 @@
   .post-index ul li {
     float: left;
     width: 50%;
-    height: 25%;
+    height: 30%;
   }
 
   .post-index ul li:first-child {
@@ -252,7 +238,7 @@
 
 @media screen and (max-width: 500px) {
   .post-index ul li {
-    height: 20%;
+    height: 32%;
   }
 
   .app {

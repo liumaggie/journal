@@ -22,6 +22,7 @@ body {
   float: left;
   height: 45%;
   position: relative;
+  transition: all 250ms ease-in-out;
 }
 
 .post-index li:not(:first-child) {
