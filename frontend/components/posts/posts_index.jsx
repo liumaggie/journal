@@ -9,7 +9,7 @@ class PostsIndex extends React.Component {
     this.state = { loading: true };
   }
 
-  componentWillMount() {
+  componentDidMount() {
     this.props.fetchAllFacebookPosts()
       .then(() => this.props.fetchAllInstagramPosts())
       .then(() => this.setState({ loading: false }));
